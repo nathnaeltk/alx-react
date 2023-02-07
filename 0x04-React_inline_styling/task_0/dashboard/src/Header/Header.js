@@ -2,13 +2,13 @@ import React from 'react';
 import './Header.css';
 import logo from '../assets/holberton-logo.jpg';
 
-const Header = () => {
+function Header(){
 	return (
-		<div className='App-header'>
-			<img src={logo} alt='Holberton' />
+		<header className="Header">
+			<img src={logo} className="Header-logo" alt="logo" />
 			<h1>School dashboard</h1>
-		</div>
+		</header>
 	);
-};
+}
 
 export default Header;

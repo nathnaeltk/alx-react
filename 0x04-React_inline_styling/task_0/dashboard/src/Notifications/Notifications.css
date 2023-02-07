@@ -1,27 +1,34 @@
 .Notifications {
-	padding: 2em;
-	border: 2px dashed red;
+  border: 2px dashed #e1354b;
+  padding: 20px 5px;
+  margin: 5px;
+  position: fixed;
+  right: 1%;
+  left: 65%;
 }
 
-button[aria-label='Close'] {
-	border: none;
-	background: none;
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 
-.notification-header {
-	display: flex;
-	justify-content: space-between;
-}
-
-.menuItem {
-	text-align: right;
+ul {
+  padding-top: 15px;
+  padding-left: 40px;
 }
 
 [data-notification-type='default'] {
-	color: blue;
+  color: blue;
 }
 
-[data-urgent],
 [data-notification-type='urgent'] {
-	color: red;
+  color: red;
+}
+
+.menuItem {
+  text-align: right;
+  font-weight: bold;
+  padding: 5px;
+  padding-right: 20px;
 }
